@@ -1,0 +1,7 @@
+{
+  "name": "widgets",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

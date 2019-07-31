@@ -1,0 +1,21 @@
+<app-header titulo="Alert"></app-header>
+
+<ion-content>
+    <ion-button expand="full" (click)="presentAlert()">Alert</ion-button>
+    <ion-item>
+        <ion-label>Fecha(selector de fechas)</ion-label>
+        <ion-datetime 
+            display-format="DD de MMMM del YYYY" 
+            picker-format="DD MMMM YYYY"
+            >
+        </ion-datetime>
+    </ion-item>
+    <ion-item>
+            <ion-label>Tiempo(selector de tiempo)</ion-label>
+            <ion-datetime 
+                display-format="HH:mm" 
+                picker-format="HH mm">
+            </ion-datetime>
+        </ion-item>
+</ion-content>
+

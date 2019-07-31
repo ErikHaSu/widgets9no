@@ -1,0 +1,34 @@
+<app-header title="fab"></app-header>
+
+<ion-content>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button color="youtube" (click)="clickYoutube()">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+          <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+            <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; let index = index">
+      <ion-label> item {{index+1}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-label>
+      Footer!
+    </ion-label>
+  </ion-toolbar>
+</ion-footer>
